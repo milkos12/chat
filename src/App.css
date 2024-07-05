@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 500px 500px;
 }
 
 .App-logo {
@@ -23,6 +25,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+
 
 .App-link {
   color: #61dafb;

@@ -8,7 +8,7 @@ export const Input = forwardRef((props, ref) => {
                 return <option value={user.name}>{user.name}</option>
             })}
             </select>
-            <input type="text" placeholder="Write your message"/>
+            <input type="text" placeholder="Write your message" onInput={props.indicator}/>
         </div>
     );
 })

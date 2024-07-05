@@ -9,10 +9,10 @@ export const Window = forwardRef((props, ref) => {
     
     if(props) 
     return(<div>
-        <Message {...props}/>
-        <Indicator />
+        <Message {...props}/>  
         <Input ref={ref} {...props}/>
         <ButtonSend {...props}/>
+        { props.indicatorState ? <Indicator /> : null }
     </div>);  
 })
 
